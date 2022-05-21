@@ -1,0 +1,48 @@
+{% load static %}
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css%}">
+    <link rel="stylesheet" href="{%static 'vendor/bootstrap/bootstrap.css'%}">
+</head>
+<body>
+    <img  id="banner" src="{%static 'img/lampu.jpg'%}" alt="">
+    <div id="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about/">About</a></li>
+        </ul>
+    </div>
+<!--KELAS CONTAINER BOOTSTRAP-->
+<div class="bootstrap">
+    <br>
+    <div class="jumbotron">
+        <h1 class="display-4">Selamat datang di era industri 4.0</h1>
+        <p class="lead">Topik revolusi industri 4.0 yaitu :</p>
+        <hr class="my-4">
+        <p>Internet of things, saat komputer dan smartphone tersambung ke Internet.</p>
+        <hr class="my-4">
+        <p>Cloud computing, proses data sampai bermain game tidak perlu menggunakan device yang cangih, cukup tersambung dengan 
+            Internet.Data di proses pada komputer server yang menyediakan service tersebut.
+        </p>
+        <hr class="my-4">
+        <p>Mechine Learning, yaitu mesin yang memiliki kemampuan untuk belajar, sehingga melakukan koreksi yang tepat untuk
+            memperbaiki hasil berikutnya.
+        </p>
+        <a class=" btn btn-primary btn-lg" href="#" role="button">Topik Lainnya</a>
+    </div>
+</div>
+<!--FOOTER-->
+<footer class="footer">
+    <div class="container">
+        <span class="text-dark">Copyright 2022</span>
+    </div>
+</footer>
+
+<!--JS BOOTSTRAP-->
+<script src="{% static 'vendor/bootstrap/jquery-3.3.1.slim.min.js'%}" type="text/javascript"></script>
+<script src="{% static 'vendor/bootstrap/popper.min.js'%}" type="text/javascript"></script>
+<script src="{% static 'vendor/bootstrap/bootstarp.min.js'%}" type="text/javascript"></script>
+
+</body>
+</html>
